@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>matrix web/Contact</title>
+   <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">-->
+    <link rel="stylesheet" href="../bootstrap-5.0.2-dist/css/bootstrap.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow p-3 mb-5 fixed-top" aria-label="Ninth navbar Example">
+        <div class="container-xl">
+            <a href="../index.html" class="navbar-brand">
+                <span class="text-info">Matrix</span>
+                <span class="text-danger">Web</span>
+            </a>
+            <button class="navbar-toggler " type="button"data-bs-toggle="collapse"data-bs-target="#matunav"aria-controls="navbarsExample07xL" aria-expanded="false" aria-label="toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="matunav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0" >
+                    <li class="nav-item">
+                        <a href="../index.html"class="nav-link activ" aria-current="page">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href=""class="nav-link disabled">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href=""class="nav-link" id="matuMiniDropdown" data-bs-toggle="dropdown"aria-expanded="false">Gallery</a>
+                        <ul class="dropdown-menu bg-dark " aria-labelledby="matuMiniDropdown">
+                            <li>
+                                <a href="#"class="dropdown-item text-light">Images</a>
+                            </li>
+                            <li>
+                                <a href="#"class="dropdown-item text-light">Videos</a>
+                            </li>
+                            <li>
+                                <a href="#"class="dropdown-item text-light">Slides</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item" tabindex="-1" aria-disabled="true">
+                        <a href="../pages/contact.html"class="nav-link">Contact Us</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input type="search" class="form-control me-2" placeholder="search here..." aria-label="search">
+                    <button class="bnt btn-success" type="submit">
+                        search
+                    </button>
+                </form>
+            </div>
+            
+        </div>
+    </nav>
+    <!--container-->
+    <div class="container mt-5 pt-5 ">
+
+        <!--contact form-->
+        <div class="bg-light p-5 mb-5 rownded">
+            <p class="h1 text-center m-3 p-3">Matrix Web -Contact Us </p>
+            <form class="row g-3 border border-secondery p-5 rownded">
+                <div class="row">
+                    <div class="col col-md-4 mb-3">
+                        <label for="validationServer01" class="form-label">First name</label>
+                        <input type="text" class="form-control is-valid" id="validationServer01" value="Mark" required>
+                        <div class="valid-feedback">
+                          Looks good!
+                        </div>
+                    </div>
+                    <div class="col col-md-4 mb-3">
+                        <label for="validationServer02" class="form-label">Last name</label>
+                        <input type="text" class="form-control is-valid" id="validationServer02" value="Otto" required>
+                        <div class="valid-feedback">
+                          Looks good!
+                        </div>
+                    </div>
+                    <div class="col col-md-4 mb-3">
+                        <label for="validationServeremail" class="form-label">email</label>
+                        <div class="input-group has-validation">
+                          <span class="input-group-text" id="inputGroupPrepend3">@</span>
+                          <input type="email" class="form-control is-invalid" id="validationServeremail" aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback" required>
+                          <div id="validationServerUsernameFeedback" class="invalid-feedback">
+                            Please choose email Address.
+                          </div>
+                        </div>
+                    </div>
+                    <div class="col col-md-12 mb-3">
+                        <label for="validationServerHome" class="form-label">Home Address</label>
+                        <input type="text" class="form-control is-valid" id="validationServerHome" value="Mark" required>
+                        <div class="valid-feedback">
+                          Looks good!
+                        </div>
+                    </div>
+                    <div class="col col-md-12 mb-3">
+                        <label for="validationServerWork" class="form-label">Work Address</label>
+                        <input type="text" class="form-control is-valid" id="validationServerWork" value="Mark" required>
+                        <div class="valid-feedback">
+                          Looks good!
+                        </div>
+                    </div>
+                    <div class=" col col-md-6 mb-3">
+                        <label for="validationServer03" class="form-label">City</label>
+                        <input type="text" class="form-control is-invalid" id="validationServer03" aria-describedby="validationServer03Feedback" required>
+                        <div id="validationServer03Feedback" class="invalid-feedback">
+                          Please provide a valid city.
+                        </div>
+                    </div>
+                    <div class="col col-md-3 mb-3">
+                        <label for="validationServer04" class="form-label">State</label>
+                        <select class="form-select is-invalid" id="validationServer04" aria-describedby="validationServer04Feedback" required>
+                          <option selected disabled value="">Choose...</option>
+                          <option>Amhara</option>
+                          <option>BeniShangul</option>
+                          <option>Ormiya</option>
+                          <option>Tigray</option>
+                        </select>
+                        <div id="validationServer04Feedback" class="invalid-feedback">
+                          Please select a valid state.
+                        </div>
+                    </div>
+                    <div class="col col-md-3 mb-3">
+                        <label for="validationServer05" class="form-label">Zip</label>
+                        <input type="number" class="form-control is-invalid" id="validationServer05" aria-describedby="validationServer05Feedback" required>
+                        <div id="validationServer05Feedback" class="invalid-feedback">
+                          Please provide a valid zip.
+                        </div>
+                    </div>
+                    <div class="col col-12 mb-3">
+                        <div class="form-check">
+                          <input class="form-check-input is-invalid" type="checkbox" value="" id="invalidCheck3" aria-describedby="invalidCheck3Feedback" required>
+                          <label class="form-check-label" for="invalidCheck3">
+                            Agree to terms and conditions
+                          </label>
+                          <div id="invalidCheck3Feedback" class="invalid-feedback">
+                            You must agree before submitting.
+                          </div>
+                        </div>
+                    </div>
+                    <div class="col col-12 mb-3">
+                        <button class="btn btn-success" type="submit">Submit form</button>
+                    </div>
+                </div>
+                
+              </form>
+        </div>
+    </div>
+    <footer class="footer mt-5 py-3 bg-light">
+        <div class="contener">
+            <span class="text-muted">
+                Copyright @ 2024 All right resreved | Matrix Web.com
+            </span>
+        </div>
+    </footer>
+    <!--<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>-->
+    <script src="../bootstrap-5.0.2-dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
